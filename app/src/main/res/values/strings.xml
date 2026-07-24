@@ -21,7 +21,7 @@
   -->
 
 <resources>
-    <string name="app_name" translatable="false">Odyssey Auto</string>
+    <string name="app_name" translatable="false">Hub</string>
     <!-- menu selector  -->
     <string name="menu_artists">Artists</string>
     <string name="menu_album">Albums</string>
