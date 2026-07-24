@@ -275,6 +275,7 @@ public class MusicLibraryHelper {
      * @return The list of {@link TrackModel} of all tracks for the specified playlist.
      * @deprecated Starting with API Level 30 the support for playlists in the mediastore will end.
      */
+    @Deprecated
     public static List<TrackModel> getTracksForPlaylist(final long playlistId, final Context context) {
         final List<TrackModel> playlistTracks = new ArrayList<>();
 
@@ -744,6 +745,7 @@ public class MusicLibraryHelper {
      * @return The list of {@link PlaylistModel} of all playlists found in the MediaStore.
      * @deprecated Starting with API Level 30 the support for playlists in the mediastore will end.
      */
+    @Deprecated
     public static List<PlaylistModel> getAllPlaylists(final Context context) {
         final ArrayList<PlaylistModel> playlists = new ArrayList<>();
 
