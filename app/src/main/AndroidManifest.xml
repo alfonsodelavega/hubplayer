@@ -23,7 +23,8 @@
         <activity
             android:name=".activities.OdysseyMenuSelectorActivity"
             android:exported="true"
-            >
+            android:screenOrientation="landscape"
+            tools:ignore="DiscouragedApi">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -172,6 +173,11 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_info" />
         </receiver>
+
+        <!-- Allow blocking app orientation despite Android 16 stuff -->
+        <property
+            android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+            android:value="true" />
     </application>
 
 </manifest>
